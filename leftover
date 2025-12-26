@@ -1,0 +1,12 @@
+problem:
+you are given two strings a and b . your task is to find and return a string representing the leftover string in a after removing all the latters that exist in string b. return "empty" if the output does not contain any value.
+solution:
+def cupcakes(n,arr):
+    sum=0
+    for i in range(n):
+      if arr[i]>=5:
+         sum+=arr[i]
+    print(sum)
+n=5
+arr=[1,2,5,8,3,7]
+cupcakes(n,arr)
