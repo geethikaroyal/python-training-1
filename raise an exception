@@ -1,0 +1,13 @@
+print("start")
+try:
+    x = int(input("enter a number upto 100: "))
+    
+    if x > 100:
+        raise ValueError(x)
+    else:
+        print(x, "is within the allowed range")
+
+except ValueError as e:
+    print(e, "is out of allowed range")
+
+print("stop")
